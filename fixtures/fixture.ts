@@ -1,8 +1,8 @@
 import { test as base, expect } from '@playwright/test';
-import { LoginPage } from '../pages/loginPage';
-import { DashboardPage } from '../pages/dashboardPage';
-import { PIMPage } from '../pages/pimPage';
-import { EmployeePage } from '../pages/employeePage';
+import { LoginPage } from '../Pages/loginPage';
+import { DashboardPage } from '../Pages/dashboardPage';
+import { PIMPage } from '../Pages/pimPage';
+import { EmployeePage } from '../Pages/employeePage';
 
 type MyFixtures = {
     loginPage: LoginPage;
