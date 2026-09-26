@@ -1,0 +1,9 @@
+[
+  {
+    "firstName": "demo",
+    "lastName": "user",
+    "jobTitle": "QA Engineer",
+    "employmentStatus": "Full-Time Permanent",
+    "profilePicture": "data/orange.png"
+  }
+]
