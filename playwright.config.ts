@@ -7,7 +7,7 @@ export default defineConfig({
   workers: 2,
   reporter: [['html', { open: 'never' }]],
   use: {
-    headless: false,
+    headless: true,
     trace: 'on',
     video: 'on',
     screenshot: 'only-on-failure',
