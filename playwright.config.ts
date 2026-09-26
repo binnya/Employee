@@ -5,7 +5,7 @@ export default defineConfig({
   testDir: './tests',
   outputDir: './test-results',
   workers: 2,
-  reporter: [['html', { open: 'never' }]],
+  reporter: [['html', { open: 'always', outputFolder: 'playwright-report' }], ['list']],
   use: {
     headless: true,
     trace: 'on',
