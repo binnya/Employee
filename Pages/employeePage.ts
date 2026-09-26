@@ -27,6 +27,11 @@ export class EmployeePage {
     await expect(this.firstNameInput, 'First name field should be visible before entering employee data.').toBeVisible({ timeout: 30000 });
     await this.firstNameInput.fill(firstName);
     await this.lastNameInput.fill(lastName);
+
+    const uniqueEmployeeId = String(Date.now()).slice(-6);
+    await expect(this.employeeId, 'Employee ID field should be present in the add employee form.').toBeVisible({ timeout: 30000 });
+    await this.employeeId.clear();
+    await this.employeeId.fill(uniqueEmployeeId);
   }
 
   async uploadProfilePicture(filePath: string) {

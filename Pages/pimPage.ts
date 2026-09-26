@@ -40,7 +40,7 @@ export class PIMPage {
     ).toBeGreaterThan(0);
 
     const row = this.page.locator('.oxd-table-card').filter({ hasText: employeeId.trim() }).first();
-    await row.scrollIntoViewIfNeeded();
+    await expect(row, `Employee row for ${employeeId} should be visible before opening it.`).toBeVisible({ timeout: 30000 });
     await row.click({ force: true });
     await this.page.waitForLoadState('networkidle');
     return row;
